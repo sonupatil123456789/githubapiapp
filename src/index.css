@@ -1,0 +1,234 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.imagepic{
+  border-radius: 50%;
+}
+
+.mainsection{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  /* background-color: rgb(118, 19, 255); */
+   /* background-color: aliceblue; */
+}
+
+.loadingdiv{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap');
+
+.navbar{
+	background-color:whitesmoke;
+	position: fixed;
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+	height: 8vh;
+	z-index: 1000;
+	padding: 0px;
+  }
+  .cointainer1{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 8%;
+	height: 8vh;
+	display: none;
+  }
+  .handburger{
+	width: 1.5rem;
+	height: 3px;
+	background-color: var(--Grayblack_Text_color);
+	margin: 2.5px;
+	transition: 0.5s ease-in-out;
+  }
+  .handburger1{
+	transform: rotate(45deg);
+	transition: 0.5s ease-in-out;
+	position: relative;
+	top: 8px;
+  }
+  .handburger2{
+	opacity: 0;
+	position: relative;
+	top: -60px;
+	transform: rotate(0deg);
+	transition: 1s ease-in-out;
+  }
+  .handburger3{
+  transform: rotate(-45deg);
+  transition: 0.5s ease-in-out;
+  position: relative;
+  top: -8px;
+  }
+  .cointainer2{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 25%;
+	height: 8vh;
+  }
+  .cointainer2 h1{
+	position: relative;
+	top: 0.2rem;
+	right: -2rem;
+	font-family: "Poppins", sans-serif;
+	font-weight: bold;
+	font-size: 26px;
+	color: var(--Black_Text_color);
+  }
+  .cointainer3{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	width: 60%;
+	height: 8vh;
+  }
+  .navli{
+	display: flex;
+	width: 110px;
+	height: 40px;
+	align-items: center;
+	justify-content: center;
+	list-style: none;
+  }
+  .nava{
+	text-decoration: none;
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--Grayblack_Text_color);
+  }
+  .nava:hover{
+   color:  var(--Purple_Text_color);
+  }
+  .cointainer4{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 15%;
+	height: 8vh;
+  }
+
+
+  
+/* ////////////////////////// */
+
+#container{
+	box-shadow: 0 15px 30px 1px grey;
+	background: rgba(255, 255, 255, 0.90);
+	text-align: center;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 5em auto;
+	height: 200px;
+	width: 30%;
+  
+	
+}
+.product-details {
+	position: relative;
+	text-align: left;
+	overflow: hidden;
+	padding: 30px;
+	height: 100%;
+	float: left;
+	width: 40%;
+}
+#container .product-details h1{
+	/* font-family: 'Bebas Neue', cursive; */
+	display: inline-block;
+	position: relative;
+	font-size: 20px;
+	color: #344055;
+	margin: 0;
+	
+}
+#container .product-details h1:before{
+	position: absolute;
+	content: '';
+	right: 0%; 
+	top: 0%;
+	transform: translate(25px, -15px);
+	/* font-family: 'Bree Serif', serif; */
+	display: inline-block;
+	background: #ffe6e6;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 5px;
+	color: white;
+	margin: 0;
+	animation: chan-sh 6s ease infinite;
+
+}
+.control{
+	position: absolute;
+	bottom: 20%;
+	left: 22.8%;
+	
+}
+/* background:  #809fff; */
+.product-image {
+	transition: all 0.3s ease-out;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	float: right;
+	width: 45%;
+	display: inline-block;
+}
+
+#container img {width: 100%;height: 100%;}
+
+.info {
+  padding: 8px;
+    background: rgba(216, 216, 216, 0.9);
+    font-family: 'Bree Serif', serif;
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 1.8;
+    text-align: left;
+    font-size: 80%;
+    cursor: no-drop;
+    color: rgb(57, 57, 57);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.info h2 {text-align: center}
+.product-image:hover .info{transform: translateX(0);}
+
+.info ul li{transition: 1s ease;}
+.info ul li:hover{transform: translateX(50px) scale(1);}
+
+.product-image:hover img {transition: all 0.3s ease-out;}
+.product-image:hover img {transform: scale(1, 1);}
