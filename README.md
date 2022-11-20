@@ -4,6 +4,7 @@ Github test project
 implemented features  
 atmost 12 data in one component 
 details page 
+circular progressbar
 serverside pegenation is not working in this github API URL   =  https://api.github.com/users?page=2&per_page=12
 
 test project is hosted on firebase web hosting =      
