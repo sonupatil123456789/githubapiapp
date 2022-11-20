@@ -1,6 +1,8 @@
 import Cards from "./Cards";
 import React from "react";
 
+// jihdxwehcweiodx wedx cx ekdewopkweocnewcw 
+
 const Home = () => {
   return (
     <div className="App mainsection">
